@@ -70,6 +70,5 @@ for ticker in tickers:
         fig.autofmt_xdate()
 
     plt.tight_layout()
-    plt.savefig(f'plots/nday_logReturns{ticker.upper()}_{n}-day')
-    plt.show()
+    plt.savefig(f'E:\QR_Proj\Phase_1\plots/nday_logReturns/{ticker.upper()}')
     

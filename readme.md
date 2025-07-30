@@ -25,7 +25,7 @@ This project explores quantitative signals in the AI hardware and semiconductor 
 ### Phase 2: Feature Engineering
 - [x] Compute N-day log returns for N = 5, 10, 21
   - Completed, not the best way of doing so, could definitely be more efficient but what I've done works. One interesting thing was how the datetime was not cleaned to consider the daylight savings. Some trading days ended at 4 and others at 5. This caused a periodic error from June till some point later in the year every year. Diagnosing the problem was simple, by checking to see if rows with the specific time that was missing existed.
-   
+
 - [ ] Calculate 20-day **rolling Z-scores** of returns to normalize momentum
 - [ ] Implement Relative Strength Index (RSI) for each ticker
 - [ ] Track Nvidia’s **outperformance vs AMD/TSMC/SOXX** over time
@@ -75,3 +75,6 @@ This project explores quantitative signals in the AI hardware and semiconductor 
 
 ## 📌 Author
 This project is part of a personal Quant Research initiative to explore factor-based alpha strategies in tech and AI stocks.
+
+## TODO
+- add a config file to store things like an array of tickers and window sizes for the class rather then defining them inside the class.
