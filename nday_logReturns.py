@@ -45,7 +45,7 @@ def nday_with_dates(price_tuples, ndays_offset):
     dates = [d for d, p in price_tuples]
     prices = [p for d, p in price_tuples]
     new_prices = prices[ndays_offset-1:] + [0]*(ndays_offset-1)
-    returns = np.array(new_prices) / np.array(prices)
+    returns = np.log(np.array(new_prices) / np.array(prices))
     return list(zip(dates, returns))
 
 nday_prices = {} 
