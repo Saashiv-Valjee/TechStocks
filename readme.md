@@ -26,8 +26,12 @@ This project explores quantitative signals in the AI hardware and semiconductor 
 - [x] Compute N-day log returns for N = 5, 10, 21
   - Completed, not the best way of doing so, could definitely be more efficient but what I've done works. One interesting thing was how the datetime was not cleaned to consider the daylight savings. Some trading days ended at 4 and others at 5. This caused a periodic error from June till some point later in the year every year. Diagnosing the problem was simple, by checking to see if rows with the specific time that was missing existed.
 
-- [ ] Calculate 20-day **rolling Z-scores** of returns to normalize momentum
-- [ ] Implement Relative Strength Index (RSI) for each ticker
+- [x] Calculate 20-day **rolling Z-scores** of returns to normalize momentum
+  - Completed, Using pandas rolling function with min_periods to create a rolling window for days provided there are N amount of days previously available for the rolling window calculation.
+
+- [x] Implement Relative Strength Index (RSI) for each ticker
+  - Completed, using 20 day windows, with markers at 30,50,70 per ticker per year. Rolling and where from pandas are great functions! 
+  
 - [ ] Track Nvidia’s **outperformance vs AMD/TSMC/SOXX** over time
 
 ---
