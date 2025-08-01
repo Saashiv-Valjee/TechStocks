@@ -20,6 +20,15 @@ class TickerReader:
         return self.ticker_hists
 
     @staticmethod
+    def Z_score(prices, window):
+        rolling_mean = prices.rolling(window, min_periods=window).mean()
+        rolling_std  = prices.rolling(window, min_periods=window).std()
+        Z_score = (prices - rolling_mean) / rolling_std
+        return Z_score
+
+
+    # not sure how useful these are anymore, but I'll keep them around incase 
+    @staticmethod
     def get_price(df, date_str):
         # Try both -05:00 and -04:00 timezone-aware strings
         for tz in ["-05:00", "-04:00"]:

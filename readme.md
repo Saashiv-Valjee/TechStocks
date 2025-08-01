@@ -14,7 +14,7 @@ This project explores quantitative signals in the AI hardware and semiconductor 
 
 ## 🎯 Project Goals
 
-### Phase 1: Setup & Data Pipeline
+### Phase 0.5: Setup & Data Pipeline
 - [x] Set up Python environment using Conda
 - [x] Install packages: `yfinance`, `pandas`, `numpy`, `matplotlib`, `seaborn`
 - [x] Retrieve historical daily data for all tickers using Yahoo Finance
@@ -22,7 +22,7 @@ This project explores quantitative signals in the AI hardware and semiconductor 
 
 ---
 
-### Phase 2: Feature Engineering
+### Phase 1: Feature Engineering
 - [x] Compute N-day log returns for N = 5, 10, 21
   - Completed, not the best way of doing so, could definitely be more efficient but what I've done works. One interesting thing was how the datetime was not cleaned to consider the daylight savings. Some trading days ended at 4 and others at 5. This caused a periodic error from June till some point later in the year every year. Diagnosing the problem was simple, by checking to see if rows with the specific time that was missing existed.
 
@@ -32,11 +32,11 @@ This project explores quantitative signals in the AI hardware and semiconductor 
 - [x] Implement Relative Strength Index (RSI) for each ticker
   - Completed, using 20 day windows, with markers at 30,50,70 per ticker per year. Rolling and where from pandas are great functions! 
   
-- [ ] Track Nvidia’s **outperformance vs AMD/TSMC/SOXX** over time
-
+- [x] Track Nvidia’s **outperformance vs AMD/TSMC/SOXX** over time
+  - Completed, nothng to note really, this one was just pretty simple and interesting.
 ---
 
-### Phase 3: Signal Construction
+### Phase 2: Signal Construction
 - [ ] Define simple alpha signals:
   - Go long Nvidia if its 10-day return z-score > AMD & TSMC
   - Go long Nvidia if it outperforms SOXX by > 1.5%
@@ -44,7 +44,7 @@ This project explores quantitative signals in the AI hardware and semiconductor 
 
 ---
 
-### Phase 4: Backtest and Evaluation
+### Phase 3: Backtest and Evaluation
 - [ ] Build simple backtester for daily rebalancing
 - [ ] Calculate performance metrics:
   - Sharpe Ratio
@@ -54,7 +54,7 @@ This project explores quantitative signals in the AI hardware and semiconductor 
 
 ---
 
-### Phase 5: Insights and Strategy Development
+### Phase 4: Insights and Strategy Development
 - [ ] Identify strongest lead/lag relationships
 - [ ] Test cross-correlation: Does NVDA lead AMD or vice versa?
 - [ ] Propose simple rules-based trading strategy based on findings
