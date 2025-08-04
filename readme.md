@@ -37,11 +37,13 @@ This project explores quantitative signals in the AI hardware and semiconductor 
 ---
 
 ### Phase 2: Signal Construction
-- [ ] Define simple alpha signals:
+- [x] Define simple alpha signals:
   - Go long Nvidia if its 10-day return z-score > AMD & TSMC
   - Go long Nvidia if it outperforms SOXX by > 1.5%
-- [ ] Construct signal time series for backtesting
+    - Completed, this strategy isn't very good to be honest, but it works as some dummy strategy for now... 
 
+- [x] Construct signal time series for backtesting
+  - Completed. This is just the daily close data I am currently using...
 ---
 
 ### Phase 3: Backtest and Evaluation
