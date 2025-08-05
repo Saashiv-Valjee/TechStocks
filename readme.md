@@ -47,13 +47,16 @@ This project explores quantitative signals in the AI hardware and semiconductor 
 ---
 
 ### Phase 3: Backtest and Evaluation
-- [ ] Build simple backtester for daily rebalancing
-- [ ] Calculate performance metrics:
+
+The previous code is pretty messy and annoying to use so I am going to rewrite it.
+
+
+- [x] Build simple backtester for daily rebalancing
+- [x] Calculate performance metrics:
   - Sharpe Ratio
   - Max Drawdown
   - Equity Curve vs Benchmark (SOXX)
-- [ ] Plot signal vs returns scatterplots and trend heatmaps
-
+- Completed, this one was interesting, learning new ways to represent portfolios and strategies was fun. There seem to be alof of functions with numpy and pandas that are extremely good at processing the data in ways that this kind of analysis kills for. I think for this work I will continue with notebooks since it's mostly just strategy development.
 ---
 
 ### Phase 4: Insights and Strategy Development

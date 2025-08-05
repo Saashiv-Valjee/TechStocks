@@ -1,0 +1,11 @@
+tickers:
+  - NVDA
+  - AMD
+  - TSM
+  - SMCI
+  - SOXX
+window_sizes:
+  rsi: 20
+  zscore: [5, 10, 21]
+main_ticker:
+  - NVDA
