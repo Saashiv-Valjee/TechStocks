@@ -60,10 +60,12 @@ The previous code is pretty messy and annoying to use so I am going to rewrite i
 ---
 
 ### Phase 4: Insights and Strategy Development
-- [ ] Identify strongest lead/lag relationships
-- [ ] Test cross-correlation: Does NVDA lead AMD or vice versa?
+- [x] Identify strongest lead/lag relationships
+  - Completed, pretty simple really, 
+- [x] Test cross-correlation: Does NVDA lead AMD or vice versa?
+  - Completed during part one of phase 4, again simple but also interesting.
 - [ ] Propose simple rules-based trading strategy based on findings
-
+  -  Given that TSM leads NVDA, we could try comparing $500 per month regardless vs 500 (which rolls onto next month if unused) whenever TSM has an anomalous rally? 
 ---
 
 ## 🛠 Tech Stack
