@@ -64,8 +64,9 @@ The previous code is pretty messy and annoying to use so I am going to rewrite i
   - Completed, pretty simple really, 
 - [x] Test cross-correlation: Does NVDA lead AMD or vice versa?
   - Completed during part one of phase 4, again simple but also interesting.
-- [ ] Propose simple rules-based trading strategy based on findings
+- [x] Propose simple rules-based trading strategy based on findings
   -  Given that TSM leads NVDA, we could try comparing $500 per month regardless vs 500 (which rolls onto next month if unused) whenever TSM has an anomalous rally? 
+    - Completed, the results are that NVDAs gains are more company driven then sector driven, so signals based on a more fundamental ticker within the sector open up the portfolio to more risk then reward.  
 ---
 
 ## 🛠 Tech Stack
